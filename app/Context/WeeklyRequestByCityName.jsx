@@ -18,7 +18,7 @@ export default function WeeklyRequestByCityName({ children }) {
     },
     onSubmit: (values) => {
       setCity(values.citytype);
-      //console.log(values.citytype);
+      console.log(values.citytype);
     },
   });
   async function GetWeeklyRequestByCityName(City) {
@@ -26,7 +26,7 @@ export default function WeeklyRequestByCityName({ children }) {
       const CityName = await axios.get(
         `http://api.openweathermap.org/data/2.5/forecast?q=${City}&appid=${APIKEY}&units=metric`
       );
-      //console.log(CityName);
+      console.log(CityName);
       setSearchByCityName(true);
       setSavingDataInState(CityName);
       setSunRise(
