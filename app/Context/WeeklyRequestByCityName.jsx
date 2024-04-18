@@ -19,6 +19,7 @@ export default function WeeklyRequestByCityName({ children }) {
     onSubmit: (values) => {
       setCity(values.citytype);
       console.log(values.citytype);
+      console.log(values.citytype);
     },
   });
   async function GetWeeklyRequestByCityName(City) {
