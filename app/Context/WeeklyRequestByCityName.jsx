@@ -25,7 +25,7 @@ export default function WeeklyRequestByCityName({ children }) {
   async function GetWeeklyRequestByCityName(City) {
     try {
       const CityName = await axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${City}&appid=${APIKEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${City}&appid=${APIKEY}&units=metric`
       );
       console.log(CityName);
       setSearchByCityName(true);
